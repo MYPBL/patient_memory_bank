@@ -14,7 +14,7 @@ async def main():
     # --- HOSPITAL SIDE ---
     print("\n--- DOCTOR VIEW ---")
     briefing = await db.recall("What is Sarah's history?")
-    print(briefing.context)
+    print(briefing.context) 
 
 if __name__ == "__main__":
     asyncio.run(main())
