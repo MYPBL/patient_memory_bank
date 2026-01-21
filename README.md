@@ -12,7 +12,7 @@ By using **DeltaMemory** as a centralized cognitive layer, this project connects
 1. **Intake Agent (Patient Side):** Greets the patient via mobile/kiosk and "ingests" their history, automatically extracting facts like allergies and past surgeries.
 2. **Doctor Agent (Hospital Side):** Recalls the patient's centralized history to provide a "30-second medical brief" before a consultation starts.
 
-## 🛠️ Tech Stack
+## Tech Stack
 - **Language:** Python 3.x
 - **Memory Engine:** DeltaMemory Python SDK
 - **Environment:** VS Code + Virtual Environment (venv)
@@ -23,7 +23,7 @@ By using **DeltaMemory** as a centralized cognitive layer, this project connects
 - `requirements.txt`: List of necessary Python libraries.
 - `.env`: (Configuration) Stores the DeltaMemory API key and Base URL.
 
-## ⚙️ Setup & Installation
+## Setup & Installation
 
 1. **Create Virtual Environment:**
    ```bash
