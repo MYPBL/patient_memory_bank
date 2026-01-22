@@ -1,9 +1,9 @@
 # app.py
 import asyncio
-from mock_sdk import MockDeltaMemory # Switch to 'from deltamemory import DeltaMemory' once you have the key
+from mock_sdk import MockDeltaMemory 
 
 async def main():
-    # Initialize the mock database
+
     db = MockDeltaMemory()
 
     # --- PATIENT SIDE ---

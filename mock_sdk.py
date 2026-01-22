@@ -1,4 +1,4 @@
-# mock_sdk.py
+
 class MockResponse:
     def __init__(self):
         self.context = "### Patient Summary\n- Allergy: Penicillin\n- History: ACL Surgery (2022)\n- Recent: Chest pain when climbing stairs."
