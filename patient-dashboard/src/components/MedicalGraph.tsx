@@ -8,7 +8,7 @@ export function MedicalGraph({ patientId }: { patientId: string }) {
   useEffect(() => {
     const fetchGraph = async () => {
       try {
-        const res = await fetch(`http://localhost:5000/api/graph?patientId=${patientId}`);
+        const res = await fetch(`http://localhost:8000/api/graph?patientId=${patientId}`);
         const graph = await res.json();
         setData(graph);
       } catch (err) {
@@ -30,7 +30,7 @@ export function MedicalGraph({ patientId }: { patientId: string }) {
     const height = svgRef.current.clientHeight;
     const g = svg.append("g");
 
-    // --- CRITICAL FIX: Map 'from/to' to 'source/target' ---
+  
     const formattedNodes = data.nodes.map((d: any) => ({ ...d }));
     const formattedLinks = data.edges.map((d: any) => ({
       ...d,

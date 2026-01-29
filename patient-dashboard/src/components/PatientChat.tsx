@@ -12,7 +12,7 @@ export function PatientChat({ patientId }: { patientId: string }) {
     setMessages([...messages, userMsg]);
 
     try {
-      const res = await fetch("http://localhost:5000/chat", {
+      const res = await fetch("http://localhost:8000/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ patient_id: patientId, agent_type: agentType, message: input })
